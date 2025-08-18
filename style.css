@@ -1,0 +1,102 @@
+/*Убираем все отступы*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Задаем основные пееенные */
+:root{
+    --main-font:'Poppins', sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+}
+
+header{
+    width: 1440px;
+    height: 116px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-left{
+    margin: 32px 0 32px 64px;
+    width: 295px;
+    height: 51px;
+    background-color: #ffffff;
+    display: flex;
+    align-content: space-between;
+}
+
+.header-left img{
+    padding: 7px 15px 9px 0;
+}
+
+.header-left span{
+    font-family: var(--main-font);
+    font-weight: var(--font-regular);
+    color: #020202;
+    font-size: 34px;
+    padding: 7px 55px 9px 0;
+}
+.header-right{
+    margin: 43px 0 43px 407px;
+    width: 610px;
+    height: 32px;
+    background-color: #ffffff;
+    display: flex;
+
+}
+.header-right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+}
+.header-right ul li a{font-family: var(--main-font);
+    font-weight: var(--font-regular);
+    font-size: 20px;
+    line-height: 135%;
+    text-align: center;
+    text-decoration: none;
+    color: #202020;
+}
+.header-right ul li:nth-child(3) a{
+    font-family: var(--main-font);
+    font-weight: var(--font-regular);
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    text-decoration: none;
+    color: #202020;
+}
+.header-right ul li:nth-child(4) a{
+    font-weight: var(--font-bold);
+    font-size: 20px;
+    line-height: 135%;
+    text-align: center;
+    text-decoration: none;
+    color: #202020;
+}
+
+.main-container{
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 64px 64px 128px 64px;
+    width: 1440px;
+    height: 896px;
+}
+.main-container-left{
+    width: 640px;
+    height: 650px;
+}
+.main-container-left h1{
+    font-family: var(--main-font);
+    font-weight: var(--font-bold);
+    font-size: 64px;
+    text-transform: capitalize;
+    color: #202020;
+}
