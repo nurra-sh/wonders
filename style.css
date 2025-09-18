@@ -332,7 +332,7 @@ main{
     font-weight: 800;
     font-size: 64px;
     line-height: 120%;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #202020;
 }
@@ -763,7 +763,7 @@ footer .copyright {
         font-weight: 800;
         font-size: 64px;
         line-height: 120%;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: center;
         color: #202020;
     }
