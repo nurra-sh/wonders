@@ -9,26 +9,239 @@
 <body>
     <header>
         <div class="header-left">
-            <img src="assets/images/WondersLogo.png" height="34" width="73" alt="Wonders Logo">
+            <svg width="73" height="34" viewBox="0 0 73 34"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.2163 24.5786V20.3137L56.8388 17.985L59.2303 19.3378V12.2281L50.3323 22.2163L47.6113 25.4222L51.3615 23.0116L46.9352 27.6512L46.2931 30H44.3848H40.4802H33.5049L40.4802 28.5327V25.9956V19.5777V3.49431L33.7795 13.7348H36.0542L32.6121 21.8674L29.3541 23.4939L32.1196 24.8199L31.2612 26.3138L28.935 30H25.2665H24.4466H14.3859L24.4466 29.253V25.2797L24.5119 18.2531L21.4236 18.705L24.5886 16.9879L24.6814 12.2594L17.9196 19.2773L18.288 20.9643L14.1075 24.278L16.0133 23.735L9.76091 30H6.27066H5.51648H0L6.36248 28.1088L9.55835 20.9632L13.1242 21.6868L25.2962 8.07215L30.4598 17.7102L32.3042 9.51804L39.5581 0H42.3856L45.4529 8.25277L49.3375 10.7306L50.8526 17.9356L59.2303 9.39784L62.1637 12.1666L68.4511 25.5421L73 30H61.1676H59.7997H59.2303H50.287L59.2303 29.0353V28.0559L56.1492 26.3138L59.2163 24.5786Z" fill="#202020" />
+            </svg>
             <span>Wonders</span>
         </div>
-        <div class="header-right">
-            <ul>
-                <li><a href="">Mobile App</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Sign Up</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="">Mobile App</a>
+            <a href="">FAQs</a>
+            <a href="">Contact</a>
+            <a href="">Sign Up</a>
+        </nav>
+        <img class="burger" src="assets/images/Menu-x.png" alt="">
     </header>
     <main>
-        <div class="main-container">
-            <div class="main-container-left">
-                <h1>Skip The Climbing,<br> Catch The Bus</h1>
-                <p>We sell tickets to the best seats in the house – houses on wheels, that is!  <br>Get ready for jaw-dropping views without breaking a sweat.</p>
-            </div>
-            <div class="main-container-right"></div>
-        </div>
+       <div class="main-container">
+           <div class="main-container-left">
+              <div class="main-container-left-text">
+                  <h1>Skip the Climbing, Catch the Bus</h1>
+                  <p>We sell tickets to the best seats in the house – houses on wheels, that is!<br>
+                     Get ready for jaw-dropping views without breaking a sweat.</p>
+                  <div class="trip-options">
+                      <fieldset>
+                          <label>
+                              <input type="radio" id="round-trip" value="round-trip">
+                              Round Trip
+                          </label>
+                          <label>
+                              <input type="radio" id="one-way" value="one-way">
+                              One Way
+                          </label>
+                          <div class="passengers">
+                              <span class="icon">👤</span>
+                              <button class="minus">−</button>
+                              <span class="count">1</span>
+                              <button class="plus">+</button>
+                          </div>
+                      </fieldset>
+                  </div>
+                  <div class="trip-form">
+                     <div class="trip-stations">
+                         <div class="trip-stations-station">
+                             <span>Departure</span>
+                             <input type="text" placeholder="Your Station/City">
+                         </div>
+                         <div class="trip-stations-station">
+                             <span>Arrival</span>
+                             <input type="text" placeholder="Where To?">
+                         </div>
+                     </div>
+                      <div class="trip-date">
+                          <div class="trip-stations-station">
+                             <span>Pick your lucky day</span>
+                              <input type="date" placeholder="Depart">
+                          </div>
+                          <div class="trip-stations-station">
+                              <span>Filler</span>
+                              <input type="date" placeholder="Return">
+                          </div>
+                      </div>
+                      <button type="submit">Find My Alpine Ride</button>
+                  </div>
+              </div>
+           </div>
+           <div class="main-container-right">
+               <img src="assets/images/hero.png" alt="Hero Image">
+           </div>
+       </div>
     </main>
+    <div class="interesting-facts-container">
+        <div class="interesting-facts">
+         <div class="item">
+            <h1>68k+</h1>
+            <p>Track kilometers</p>
+         </div>
+         <div class="item">
+            <h1>1.4M+</h1>
+            <p>Photos Taken</p>
+         </div>
+         <div class="item">
+            <h1>23M+</h1>
+            <p>Altitude Gained</p>
+         </div>
+         <div class="item">
+            <h1>165+</h1>
+            <p>Years of history</p>
+         </div>
+        </div>
+    </div>
+    <div class="find-your-dream">
+         <h1>Glimpses of Glory</h1>
+        <div class="grid-images-container">
+            <picture class="img1">
+                 <source media="(max-width: 768px)" srcset="assets/images/grid-image-1-768.png">
+                 <img src="assets/images/grid-image-1.png"
+                 alt="">
+            </picture>
+            <picture class="img2">
+                 <source media="(max-width: 768px)" srcset="assets/images/grid-image-2-768.png">
+                 <img src="assets/images/grid-image-2.png"
+                 alt="">
+            </picture>
+            <picture class="img3">
+                <source media="(max-width: 768px)" srcset="assets/images/grid-image-3-768.png">
+                <img src="assets/images/grid-image-3.png"
+                     alt="">
+            </picture>
+            <picture class="img4">
+                <source media="(max-width: 768px)" srcset="assets/images/grid-image-4-768.png">
+                <img src="assets/images/grid-image-4.png"
+                     alt="">
+            </picture>
+            <picture class="img5">
+                <source media="(max-width: 768px)" srcset="assets/images/grid-image-5-768.png">
+                <img src="assets/images/grid-image-5.png"
+                     alt="">
+            </picture>
+        </div>
+    </div>
+    <div class="app">
+        <div class="app-container">
+           <h1>Free downloads app now!</h1>
+             <div class="app-img-container">
+               <img src="assets/images/Badge-google-play.png" alt="Google Play">
+               <img src="assets/images/Badge-app-gallery.png" alt="App Gallery">
+               <img src="assets/images/Badge-app-store.png" alt="App store">
+             </div>
+        </div>
+    </div>
+    <div class="faqs">
+        <div class="faqs-container">
+        <h1>FAQs.</h1>
+         <div class="faqs-section">
+            <details>
+                <summary>Alpine Bus Journeys?</summary>
+                <p>Forget crowded cities! Alpine Bus Journeys are your comfy seat with panoramic windows to breathtaking mountain vistas, charming
+                   villages, and air so fresh it might make you yodel (please don't, unless you're outside). It's transportation with a side of unparalleled
+                   scenery (and maybe a hairpin turn).</p>
+            </details>
+             <hr>
+            <details>
+                <summary>What about seating options?</summary>
+                <p>Generally, you'll find comfy standard seats (great views, great value, maybe great new friends) and perhaps slightly better seats with extra legroom.
+                   All offer a front-row seat to the greatest show on Earth – the Alps!</p>
+            </details>
+             <hr>
+            <details>
+                <summary>What is the Alpine Wallet?</summary>
+                <p>It's your digital stash of cash that makes booking bus tickets smoother than a perfectly paved mountain road.
+                    Load it up and watch your travel dreams become reality faster than a bus goes downhill.</p>
+            </details>
+             <hr>
+            <details>
+                <summary>Why a Bus Station Fee?</summary>
+                <p>A small contribution to ensure the station is clean, has reasonably fresh mountain air
+                   (filtered from bus fumes), and enough signs pointing you towards your bus, not away from it.
+                   Sometimes covers the cost of moving rogue bicycles.</p>
+            </details>
+             <hr>
+            <details>
+                <summary>My Altitude Score?</summary>
+                <p>Your loyalty points for cruising the mountain roads! Higher scores might get you priority boarding (less elbowing for the best window seat!)
+                   or maybe just bragging rights among fellow peak-passengers who prefer four wheels.</p>
+            </details>
+             <hr>
+            <details>
+                <summary>Why are buses late?</summary>
+                <p>Sometimes it's the weather (snow happens!), sometimes a sudden flock of particularly slow-moving sheep on the road, and sometimes the driver just had to stop for a photo of that view.
+                   Or maybe they got stuck behind a tractor. Welcome to "Mountain Road Time"!</p>
+            </details>
+         </div>
+        </div>
+    </div>
+    <div class="contact-us-container">
+      <div class="contact-us">
+          <div class="contact-us-inner-container">
+        <h1>Contact Us</h1>
+          <div class=contact-us-spans>
+           <span>+41 98765 43210</span>
+           <span>hello@peakpasses.eu</span>
+          </div>
+              <h2>Alpenblick Strasse 7,<br>
+            12345 Edelweiss Town, Alps</h2>
+          </div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo"><svg width="73" height="35" viewBox="0 0 73 35"  xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_9102_53)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.2163 25.0786V20.8137L56.8388 18.485L59.2303 19.8378V12.7281L50.3323 22.7163L47.6113 25.9222L51.3615 23.5116L46.9352 28.1512L46.2931 30.5H44.3848H40.4802H33.5049L40.4802 29.0327V26.4956V20.0777V3.99431L33.7795 14.2348H36.0542L32.6121 22.3674L29.3541 23.9939L32.1196 25.3199L31.2612 26.8138L28.935 30.5H25.2665H24.4466H14.3859L24.4466 29.753V25.7797L24.5119 18.7531L21.4236 19.205L24.5886 17.4879L24.6814 12.7594L17.9196 19.7773L18.288 21.4643L14.1075 24.778L16.0133 24.235L9.76091 30.5H6.27066H5.51648H0L6.36248 28.6088L9.55835 21.4632L13.1242 22.1868L25.2962 8.57215L30.4598 18.2102L32.3042 10.018L39.5581 0.5H42.3856L45.4529 8.75277L49.3375 11.2306L50.8526 18.4356L59.2303 9.89784L62.1637 12.6666L68.4511 26.0421L73 30.5H61.1676H59.7997H59.2303H50.287L59.2303 29.5353V28.5559L56.1492 26.8138L59.2163 25.0786Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_9102_53">
+                        <rect width="73" height="34" fill="white" transform="matrix(-1 0 0 1 73 0.5)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <span>Wonders</span>
+            </div>
+            <div class="footer-links">
+             <div class="footer-item">
+                <h1>About</h1>
+                 <div class="footer-item-p">
+                <p>How it works</p>
+                <p>Featured</p>
+                <p>Partnership</p>
+                <p>Bussiness Relation</p>
+                 </div>
+             </div>
+             <div class="footer-item">
+                <h1>Community</h1>
+                 <div class="footer-item-p">
+                <p>Events</p>
+                <p>Blog</p>
+                <p>Podcast</p>
+                <p>Invite a friend</p>
+                 </div>
+             </div>
+             <div class="footer-item">
+                <h1>Social</h1>
+                  <div class="footer-item-p">
+                <p>Discord</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                  </div>
+             </div>
+            </div>
+        </div>
+        <span class="copyright">
+            English: © 2025 Peak Passages.<br>
+             All Rights Reserved (Especially the Window Seats).
+        </span>
+    </footer>
 </body>
 </html>
